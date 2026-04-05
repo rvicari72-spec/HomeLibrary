@@ -1155,8 +1155,8 @@ function renderAnalytics() {
     '<div class="scard"><div class="sl">Total books</div><div class="sv">'+total+'</div></div>' +
     '<div class="scard"><div class="sl">Read</div><div class="sv" style="color:var(--teal)">'+read+'</div></div>' +
     '<div class="scard"><div class="sl">Avg rating</div><div class="sv">'+(rated.length?avg.toFixed(1):'—')+'</div></div>' +
-    '<div class="scard" style="cursor:pointer;" onclick="showFullList('categories')"><div class="sl">Categories</div><div class="sv" style="color:var(--blue)">'+numCats+'</div></div>' +
-    '<div class="scard" style="cursor:pointer;grid-column:span 2;" onclick="showFullList('authors')"><div class="sl">Authors</div><div class="sv" style="color:var(--blue)">'+numAuths+'</div></div>';
+    '<div class="scard" style="cursor:pointer;" onclick="showFullList(&quot;categories&quot;)"><div class="sl">Categories</div><div class="sv" style="color:var(--blue)">'+numCats+'</div></div>' +
+    '<div class="scard" style="cursor:pointer;grid-column:span 2;" onclick="showFullList(&quot;authors&quot;)"><div class="sl">Authors</div><div class="sv" style="color:var(--blue)">'+numAuths+'</div></div>';
 
   const allGens = Object.entries(gens).sort((a,b)=>b[1]-a[1]);
   const allAuths = Object.entries(auths).sort((a,b)=>b[1]-a[1]);
